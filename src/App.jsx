@@ -1,85 +1,111 @@
+import React from "react";
+import {
+  FaYoutube,
+  FaSpotify,
+  FaApple,
+  FaInstagram,
+  FaFacebook,
+  FaTwitter,
+  FaEnvelope,
+  FaGlobeEurope,
+} from "react-icons/fa";
+
 function App() {
   return (
     <div className="app">
       <div className="card">
         <img
           className="avatar"
-          src="/vini-placeholder.jpg" // replace with real image file in /public
+          src="/vini-placeholder.jpg" 
           alt="Vincent J. Rigney"
         />
 
         <h1 className="artist-name">Vincent J. Rigney</h1>
         <p className="tagline">Blues · Rock ’n’ Roll · Soft Rock · Indie</p>
 
+        <p className="intro">
+          Thanks for listening and supporting my music. Have a look through
+          the links below to follow, share, and keep up with new releases &amp;
+          shows.
+        </p>
+
         <div className="links">
           <a
             className="link-button link-youtube"
-            href="#"
+            href="https://youtube.com/channel/UCz4VzDs1Kkagu0D0-yhXb8A?si=55tlbYLPZQtO-T2X"
             target="_blank"
             rel="noreferrer"
           >
-            Listen on YouTube
+            <FaYoutube className="icon" />
+            <span>Listen on YouTube</span>
           </a>
 
           <a
             className="link-button link-spotify"
-            href="#"
+            href="https://open.spotify.com/artist/7BujO8GChxoZR1wOnHaXSc?si=pDrv0TIkTmC4PewgSPEaVg"
             target="_blank"
             rel="noreferrer"
           >
-            Listen on Spotify
+            <FaSpotify className="icon" />
+            <span>Listen on Spotify</span>
           </a>
 
           <a
-            className="link-button link-ytmusic"
-            href="#"
+            className="link-button link-apple"
+            href="https://music.apple.com/gb/artist/vincent-j-rigney/913647868"
             target="_blank"
             rel="noreferrer"
           >
-            Listen on YouTube Music
+            <FaApple className="icon" />
+            <span>Listen on Apple Music</span>
           </a>
 
           <a
             className="link-button link-website"
-            href="#"
+            href="https://vjrentertainment.wixsite.com/vincent-j-1/music"
             target="_blank"
             rel="noreferrer"
           >
-            Visit Website (Home)
+            <FaGlobeEurope className="icon" />
+            <span>Visit Website (Home)</span>
           </a>
 
           <a
             className="link-button link-instagram"
-            href="#"
+            href="https://www.instagram.com/vincentjrigneymusic/"
             target="_blank"
             rel="noreferrer"
           >
-            Instagram
+            <FaInstagram className="icon" />
+            <span>Instagram</span>
           </a>
 
           <a
             className="link-button link-facebook"
-            href="#"
+            href="https://www.facebook.com/profile.php?id=61551820321833"
             target="_blank"
             rel="noreferrer"
           >
-            Facebook
+            <FaFacebook className="icon" />
+            <span>Facebook</span>
           </a>
 
           <a
             className="link-button link-twitter"
-            href="#"
+            href="https://x.com/vinniejriggs"
             target="_blank"
             rel="noreferrer"
           >
-            Twitter / X
+            <FaTwitter className="icon" />
+            <span>Twitter / X</span>
           </a>
 
           <a
             className="link-button link-email"
             href="mailto:VJREntertainment@gmail.com"
           >
-            Email Vini
+            <FaEnvelope className="icon" />
+            <span>Email Vini</span>
           </a>
         </div>
 
