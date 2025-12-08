@@ -7,7 +7,6 @@ import {
   FaFacebook,
   FaTwitter,
   FaEnvelope,
-  FaGlobeEurope,
 } from "react-icons/fa";
 
 function App() {
@@ -16,7 +15,7 @@ function App() {
       <div className="card">
         <img
           className="avatar"
-          src="/vini-placeholder.jpg" 
+          src="/vini-profile.jpg" // main profile image (put this file in /public)
           alt="Vincent J. Rigney"
         />
 
@@ -24,9 +23,9 @@ function App() {
         <p className="tagline">Blues · Rock ’n’ Roll · Soft Rock · Indie</p>
 
         <p className="intro">
-          Thanks for listening and supporting my music. Have a look through
-          the links below to follow, share, and keep up with new releases &amp;
-          shows.
+          Thanks for listening and supporting the music. Have a look through
+          the links below to follow, share and keep up with new releases and
+          shows — hope you enjoy what you hear.
         </p>
 
         <div className="links">
@@ -58,16 +57,6 @@ function App() {
           >
             <FaApple className="icon" />
             <span>Listen on Apple Music</span>
-          </a>
-
-          <a
-            className="link-button link-website"
-            href="https://vjrentertainment.wixsite.com/vincent-j-1/music"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaGlobeEurope className="icon" />
-            <span>Visit Website (Home)</span>
           </a>
 
           <a
@@ -105,7 +94,7 @@ function App() {
             href="mailto:VJREntertainment@gmail.com"
           >
             <FaEnvelope className="icon" />
-            <span>Email Vini</span>
+            <span>Bookings / Press Enquiries</span>
           </a>
         </div>
 
