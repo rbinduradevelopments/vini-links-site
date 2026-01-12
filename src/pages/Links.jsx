@@ -7,6 +7,8 @@ import {
   FaFacebook,
   FaTwitter,
   FaEnvelope,
+  FaTiktok,
+  FaAmazon,
 } from "react-icons/fa";
 
 export default function Links() {
@@ -18,37 +20,93 @@ export default function Links() {
       </p>
 
       <div className="links-card">
-        <a className="link-button link-youtube" href="https://youtube.com/@vincentjrigneymusic" target="_blank" rel="noreferrer">
+        {/* YouTube Music (replaces YouTube) */}
+        <a
+          className="link-button link-youtubemusic"
+          href="https://music.youtube.com/channel/UCfSHSsIIbxkSopAnrPp-R_Q"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaYoutube className="icon" />
-          <span>Listen on YouTube</span>
+          <span>Listen on YouTube Music</span>
         </a>
 
-        <a className="link-button link-spotify" href="https://open.spotify.com/artist/7BujO8GChxoZR1wOnHaXSc?si=pDrv0TIkTmC4PewgSPEaVg" target="_blank" rel="noreferrer">
+        <a
+          className="link-button link-spotify"
+          href="https://open.spotify.com/artist/7BujO8GChxoZR1wOnHaXSc?si=pDrv0TIkTmC4PewgSPEaVg"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaSpotify className="icon" />
           <span>Listen on Spotify</span>
         </a>
 
-        <a className="link-button link-apple" href="https://music.apple.com/gb/artist/vincent-j-rigney/913647868" target="_blank" rel="noreferrer">
+        <a
+          className="link-button link-apple"
+          href="https://music.apple.com/gb/artist/vincent-j-rigney/913647868"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaApple className="icon" />
           <span>Listen on Apple Music</span>
         </a>
 
-        <a className="link-button link-instagram" href="https://www.instagram.com/vincentjrigneymusic/" target="_blank" rel="noreferrer">
+        {/* Amazon Music */}
+        <a
+          className="link-button link-amazon"
+          href="https://music.amazon.co.uk/artists/B0C8RL76CT/vincent-j-rigney?marketplaceId=A1F83G8C2ARO7P&musicTerritory=GB&ref=dm_sh_56rv7KAFL7ZeA34FYSMnWI5kV"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaAmazon className="icon" />
+          <span>Listen on Amazon Music</span>
+        </a>
+
+        {/* TikTok */}
+        <a
+          className="link-button link-tiktok"
+          href="https://www.tiktok.com/@vincentjrigneymusic?_r=1&_t=ZN-92zoxjlYFvC"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaTiktok className="icon" />
+          <span>TikTok</span>
+        </a>
+
+        <a
+          className="link-button link-instagram"
+          href="https://www.instagram.com/vincentjrigneymusic/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaInstagram className="icon" />
           <span>Instagram</span>
         </a>
 
-        <a className="link-button link-facebook" href="https://www.facebook.com/profile.php?id=61551820321833" target="_blank" rel="noreferrer">
+        <a
+          className="link-button link-facebook"
+          href="https://www.facebook.com/profile.php?id=61551820321833"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaFacebook className="icon" />
           <span>Facebook</span>
         </a>
 
-        <a className="link-button link-twitter" href="https://x.com/vinniejriggs" target="_blank" rel="noreferrer">
+        <a
+          className="link-button link-twitter"
+          href="https://x.com/vinniejriggs"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaTwitter className="icon" />
           <span>Twitter / X</span>
         </a>
 
-        <a className="link-button link-email" href="mailto:VJREntertainment@gmail.com">
+        <a
+          className="link-button link-email"
+          href="mailto:VJREntertainment@gmail.com"
+        >
           <FaEnvelope className="icon" />
           <span>Bookings / Press Enquiries</span>
         </a>
