@@ -28,11 +28,29 @@ export default function Music() {
 
         <a
           className="platform-card"
-          href="https://youtube.com/@vincentjrigneymusic"
+          href="https://music.youtube.com/channel/UCfSHSsIIbxkSopAnrPp-R_Q?si=jCJrD19_4_8xcUb8"
           target="_blank"
           rel="noreferrer"
         >
-          YouTube
+          YouTube Music
+        </a>
+
+        <a
+          className="platform-card"
+          href="https://music.amazon.co.uk/artists/B0C8RL76CT/vincent-j-rigney?marketplaceId=A1F83G8C2ARO7P&musicTerritory=GB&ref=dm_sh_56rv7KAFL7ZeA34FYSMnWI5kV"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Amazon Music
+        </a>
+
+        <a
+          className="platform-card"
+          href="https://on.soundcloud.com/QtuHbT1QXuLn3z4kxN"
+          target="_blank"
+          rel="noreferrer"
+        >
+          SoundCloud
         </a>
       </div>
 
@@ -54,27 +72,7 @@ export default function Music() {
             />
           </div>
         </section>
-
-        <section className="embed-card">
-          <h3 className="embed-title">Featured on YouTube</h3>
-
-          {/* Replace the VIDEO_ID below with the one you want to feature */}
-          <div className="embed-frame youtube">
-            <iframe
-  title="Vincent J. Rigney – Featured Video"
-  src="https://www.youtube.com/embed/IO_hDJYvyqQ"
-  width="100%"
-  height="352"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowFullScreen
-  loading="lazy"
-/>
-
-          </div>
-        </section>
       </div>
-
     </div>
   );
 }
