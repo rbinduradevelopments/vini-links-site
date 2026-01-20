@@ -62,7 +62,7 @@ export default function Home() {
 
           <p>
             Vincent has completed his third EP <strong>“Rocky Road”</strong> and is
-            currently working on his first album for <strong>2026</strong>.
+            currently working on his second album for <strong>2026</strong>.
           </p>
         </div>
 
