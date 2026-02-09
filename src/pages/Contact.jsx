@@ -124,7 +124,7 @@ export default function Contact() {
             </div>
           )}
 
-          <p className="subscribe-privacy">No spam. Unsubscribe anytime.</p>
+          
         </div>
       </div>
     </div>
