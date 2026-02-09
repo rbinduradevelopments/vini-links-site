@@ -9,7 +9,7 @@ import {
   FaEnvelope,
   FaTiktok,
   FaAmazon,
-  FaCalendarAlt
+  FaCalendarAlt,
 } from "react-icons/fa";
 
 export default function Links() {
@@ -112,6 +112,7 @@ export default function Links() {
         <FaCalendarAlt className="icon" />
         <span>Gig Info</span>
       </a>
+
 
 
 
