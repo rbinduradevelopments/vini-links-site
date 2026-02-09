@@ -258,6 +258,143 @@ body { min-height: 100vh; }
   border-radius: 1rem;
 }
 
+/* Gigs page */
+.gigs-wrap {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.gigs-heading {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #e5e7eb;
+  margin: 0.6rem 0 0.7rem;
+}
+
+.gigs-empty {
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 1.25rem;
+  padding: 1rem 1.1rem;
+  color: #cbd5e1;
+}
+
+.gigs-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.9rem;
+}
+
+.gig-card {
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 1.25rem;
+  padding: 1.15rem;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.55);
+}
+
+.gig-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.gig-date {
+  color: #cbd5e1;
+  font-weight: 800;
+  font-size: 0.98rem;
+}
+
+.gig-venue {
+  margin-top: 0.15rem;
+  color: #e5e7eb;
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+
+.gig-badge {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  font-weight: 900;
+  font-size: 0.8rem;
+  background: rgba(34, 197, 94, 0.18);
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  color: #bbf7d0;
+}
+
+.gig-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+}
+
+.gig-row {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 0.65rem;
+  align-items: start;
+}
+
+.gig-icon {
+  margin-top: 2px;
+  color: rgba(56, 189, 248, 0.9);
+}
+
+.gig-line {
+  color: #cbd5e1;
+}
+
+.gig-phone {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 800;
+}
+.gig-phone:hover {
+  text-decoration: underline;
+}
+
+.gig-actions {
+  display: flex;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.gig-btn {
+  text-decoration: none;
+  padding: 0.7rem 0.95rem;
+  border-radius: 999px;
+  font-weight: 900;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.gig-btn-primary {
+  background: #f97316;
+  color: #020617;
+  box-shadow: 0 10px 28px rgba(249, 115, 22, 0.35);
+}
+
+.gig-btn-secondary {
+  background: rgba(2, 6, 23, 0.45);
+  color: #e5e7eb;
+}
+
+.gig-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.55);
+}
+
+/* Links page: Gig button */
+.link-gigs {
+  background: #f97316;
+  color: #020617;
+  box-shadow: 0 8px 25px rgba(249, 115, 22, 0.45);
+}
+
+
 /* Contact */
 .contact-box {
   background: rgba(15, 23, 42, 0.92);
@@ -434,3 +571,4 @@ body { min-height: 100vh; }
     grid-template-columns: 1fr;
   }
 }
+

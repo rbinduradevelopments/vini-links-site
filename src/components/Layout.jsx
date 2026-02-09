@@ -23,6 +23,9 @@ export default function Layout() {
           <NavLink to="/contact" className={({ isActive }) => (isActive ? "navlink active" : "navlink")}>
             Contact
           </NavLink>
+          <NavLink to="/gigs" className={({ isActive }) => (isActive ? "navlink active" : "navlink")}>
+            Gigs
+          </NavLink>
         </nav>
       </header>
 

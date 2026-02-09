@@ -5,6 +5,8 @@ import Home from "./pages/Home.jsx";
 import Links from "./pages/Links.jsx";
 import Music from "./pages/Music.jsx";
 import Contact from "./pages/Contact.jsx";
+import Gigs from "./pages/Gigs";
+
 
 export default function App() {
   return (
@@ -15,6 +17,7 @@ export default function App() {
         <Route path="/music" element={<Music />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Home />} />
+        <Route path="/gigs" element={<Gigs />} />
       </Route>
     </Routes>
   );

@@ -9,6 +9,7 @@ import {
   FaEnvelope,
   FaTiktok,
   FaAmazon,
+  FaCalendarAlt
 } from "react-icons/fa";
 
 export default function Links() {
@@ -107,6 +108,12 @@ export default function Links() {
           <FaTwitter className="icon" />
           <span>Twitter / X</span>
         </a>
+      <a className="link-button link-gigs" href="/gigs">
+        <FaCalendarAlt className="icon" />
+        <span>Gig Info</span>
+      </a>
+
+
 
         {/* 9. Bookings (LAST) */}
         <a
