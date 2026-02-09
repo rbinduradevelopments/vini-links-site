@@ -42,9 +42,8 @@ export default function Contact() {
           "form-name": "mailing-list",
           email: trimmed,
 
-          // These 2 lines make the notification email say what you want
-          subject: "Hi Vincent — New subscriber",
-          note: "Hi Vincent, you have a new subscriber:",
+          // Friendly note that appears inside the notification email body
+          note: "🎉 Hi Vincent! You’ve got a brand new subscriber — nice one!",
         }),
       });
 
@@ -67,7 +66,10 @@ export default function Contact() {
       <div className="contact-box">
         <div className="contact-row">
           <span>Email:</span>
-          <a href="mailto:redeemedbinduraa@gmail.com">redeemedbinduraa@gmail.com</a>
+          {/* testing email (swap back later) */}
+          <a href="mailto:redeemedbinduraa@gmail.com">
+            redeemedbinduraa@gmail.com
+          </a>
         </div>
 
         <p className="small">
