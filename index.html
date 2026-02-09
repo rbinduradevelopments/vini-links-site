@@ -17,6 +17,41 @@
 
   <body>
     <div id="root"></div>
+
+    <!-- =========================
+         NETLIFY FORMS DETECTION
+         (hidden static form so Netlify detects it during build)
+         ========================= -->
+    <form
+      name="mailing-list"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <input type="hidden" name="form-name" value="mailing-list" />
+
+      <!-- Optional: custom email subject (shows in Netlify notification emails) -->
+      <input type="hidden" name="subject" value="Hi Vincent — New subscriber" />
+
+      <!-- Optional: custom note message shown inside the email body -->
+      <input
+        type="hidden"
+        name="note"
+        value="Hi Vincent, you have a new subscriber:"
+      />
+
+      <!-- Honeypot anti-spam -->
+      <p>
+        <label>
+          Don’t fill this out: <input name="bot-field" />
+        </label>
+      </p>
+
+      <!-- Real submitted field -->
+      <input type="email" name="email" />
+    </form>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

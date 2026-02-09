@@ -1,6 +1,5 @@
 import React, { useMemo, useState } from "react";
 
-// helper for Netlify form POST
 function encode(data) {
   return new URLSearchParams(data).toString();
 }
@@ -36,20 +35,20 @@ export default function Contact() {
     setMessage("");
 
     try {
-      // IMPORTANT: this is what makes Netlify capture the form submission
       const res = await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
           "form-name": "mailing-list",
           email: trimmed,
-          source: "contact-page",
+
+          // These 2 lines make the notification email say what you want
+          subject: "Hi Vincent — New subscriber",
+          note: "Hi Vincent, you have a new subscriber:",
         }),
       });
 
-      if (!res.ok) {
-        throw new Error("Netlify form submission failed");
-      }
+      if (!res.ok) throw new Error("Netlify submit failed");
 
       setStatus("success");
       setMessage("You’re subscribed! Thanks for joining the mailing list.");
@@ -68,42 +67,20 @@ export default function Contact() {
       <div className="contact-box">
         <div className="contact-row">
           <span>Email:</span>
-          <a href="mailto:VJREntertainment@gmail.com">VJREntertainment@gmail.com</a>
+          <a href="mailto:redeemedbinduraa@gmail.com">redeemedbinduraa@gmail.com</a>
         </div>
 
         <p className="small">
           Tip: If you’re booking, include the venue/location, date, and set length.
         </p>
 
-        {/* Subscribe box */}
         <div className="subscribe">
           <h3 className="subscribe-title">Join the mailing list</h3>
           <p className="subscribe-text">
             Get updates on new releases, gigs, and announcements.
           </p>
 
-          <form
-            className="subscribe-form"
-            name="mailing-list"
-            method="POST"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
-            onSubmit={handleSubscribe}
-            noValidate
-          >
-            {/* Netlify needs this hidden field */}
-            <input type="hidden" name="form-name" value="mailing-list" />
-
-            {/* optional field (nice to have later) */}
-            <input type="hidden" name="source" value="contact-page" />
-
-            {/* Honeypot anti-spam field */}
-            <p className="sr-only">
-              <label>
-                Don’t fill this out: <input name="bot-field" />
-              </label>
-            </p>
-
+          <form className="subscribe-form" onSubmit={handleSubscribe} noValidate>
             <label className="sr-only" htmlFor="subscribeEmail">
               Email address
             </label>
@@ -111,7 +88,6 @@ export default function Contact() {
             <input
               id="subscribeEmail"
               className="subscribe-input"
-              name="email"
               type="email"
               inputMode="email"
               autoComplete="email"
@@ -130,7 +106,6 @@ export default function Contact() {
             </button>
           </form>
 
-          {/* feedback */}
           {status !== "idle" && message && (
             <div
               className={
@@ -147,24 +122,9 @@ export default function Contact() {
             </div>
           )}
 
-        
+          <p className="subscribe-privacy">No spam. Unsubscribe anytime.</p>
         </div>
       </div>
-
-      {/* SUPER IMPORTANT (Netlify detection for React sites):
-          A hidden copy of the form so Netlify picks it up during build. */}
-      <form
-        name="mailing-list"
-        method="POST"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
-        hidden
-      >
-        <input type="hidden" name="form-name" value="mailing-list" />
-        <input name="email" />
-        <input name="source" />
-        <input name="bot-field" />
-      </form>
     </div>
   );
 }
