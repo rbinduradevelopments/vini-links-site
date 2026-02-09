@@ -67,8 +67,8 @@ export default function Contact() {
         <div className="contact-row">
           <span>Email:</span>
           {/* testing email (swap back later) */}
-          <a href="mailto:redeemedbinduraa@gmail.com">
-            redeemedbinduraa@gmail.com
+          <a href="mailto:VJREntertainment@gmail.com">
+            VJREntertainment@gmail.com
           </a>
         </div>
 
