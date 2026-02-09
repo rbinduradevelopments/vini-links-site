@@ -221,9 +221,9 @@ body { min-height: 100vh; }
 .link-facebook { background: #3b82f6; box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5); }
 
 .link-twitter {
-  background: #020617; color: #e5e7eb;
-  border: 1px solid rgba(148, 163, 184, 0.6);
-  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.75);
+  background: #1d9bf0;          /* X / Twitter blue */
+  color: #020617;
+  box-shadow: 0 8px 25px rgba(29, 155, 240, 0.55);
 }
 
 .link-email { background: #16a34a; box-shadow: 0 8px 25px rgba(22, 163, 74, 0.55); }

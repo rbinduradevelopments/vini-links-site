@@ -20,7 +20,7 @@ export default function Links() {
       </p>
 
       <div className="links-card">
-        {/* YouTube Music (replaces YouTube) */}
+        {/* 1. YouTube Music */}
         <a
           className="link-button link-youtubemusic"
           href="https://music.youtube.com/channel/UCfSHSsIIbxkSopAnrPp-R_Q"
@@ -31,6 +31,7 @@ export default function Links() {
           <span>Listen on YouTube Music</span>
         </a>
 
+        {/* 2. Spotify */}
         <a
           className="link-button link-spotify"
           href="https://open.spotify.com/artist/7BujO8GChxoZR1wOnHaXSc?si=pDrv0TIkTmC4PewgSPEaVg"
@@ -41,6 +42,7 @@ export default function Links() {
           <span>Listen on Spotify</span>
         </a>
 
+        {/* 3. Apple Music */}
         <a
           className="link-button link-apple"
           href="https://music.apple.com/gb/artist/vincent-j-rigney/913647868"
@@ -51,7 +53,7 @@ export default function Links() {
           <span>Listen on Apple Music</span>
         </a>
 
-        {/* Amazon Music */}
+        {/* 4. Amazon Music */}
         <a
           className="link-button link-amazon"
           href="https://music.amazon.co.uk/artists/B0C8RL76CT/vincent-j-rigney?marketplaceId=A1F83G8C2ARO7P&musicTerritory=GB&ref=dm_sh_56rv7KAFL7ZeA34FYSMnWI5kV"
@@ -62,17 +64,7 @@ export default function Links() {
           <span>Listen on Amazon Music</span>
         </a>
 
-        {/* TikTok */}
-        <a
-          className="link-button link-tiktok"
-          href="https://www.tiktok.com/@vincentjrigneymusic?_r=1&_t=ZN-92zoxjlYFvC"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FaTiktok className="icon" />
-          <span>TikTok</span>
-        </a>
-
+        {/* 5. Instagram */}
         <a
           className="link-button link-instagram"
           href="https://www.instagram.com/vincentjrigneymusic/"
@@ -83,6 +75,7 @@ export default function Links() {
           <span>Instagram</span>
         </a>
 
+        {/* 6. Facebook */}
         <a
           className="link-button link-facebook"
           href="https://www.facebook.com/profile.php?id=61551820321833"
@@ -93,6 +86,18 @@ export default function Links() {
           <span>Facebook</span>
         </a>
 
+        {/* 7. TikTok */}
+        <a
+          className="link-button link-tiktok"
+          href="https://www.tiktok.com/@vincentjrigneymusic?_r=1&_t=ZN-92zoxjlYFvC"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaTiktok className="icon" />
+          <span>TikTok</span>
+        </a>
+
+        {/* 8. Twitter / X */}
         <a
           className="link-button link-twitter"
           href="https://x.com/vinniejriggs"
@@ -103,6 +108,7 @@ export default function Links() {
           <span>Twitter / X</span>
         </a>
 
+        {/* 9. Bookings (LAST) */}
         <a
           className="link-button link-email"
           href="mailto:VJREntertainment@gmail.com"
