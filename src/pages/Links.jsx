@@ -108,14 +108,7 @@ export default function Links() {
           <FaTwitter className="icon" />
           <span>Twitter / X</span>
         </a>
-      <a className="link-button link-gigs" href="/gigs">
-        <FaCalendarAlt className="icon" />
-        <span>Gig Information</span>
-      </a>
-
-
-
-
+    
         {/* 9. Bookings (LAST) */}
         <a
           className="link-button link-email"
