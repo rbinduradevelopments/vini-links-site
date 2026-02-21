@@ -110,7 +110,7 @@ export default function Links() {
         </a>
       <a className="link-button link-gigs" href="/gigs">
         <FaCalendarAlt className="icon" />
-        <span>Gig Info</span>
+        <span>Gig Information</span>
       </a>
 
 
